@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>图片在页面上下浮动</title>
+	<script type="text/javascript" src="http://cdn.bootcss.com/jquery/3.0.0-beta1/jquery.js"></script>
+	
+	<style type="text/css">
+	body{padding: 0;margin:0;}
+	.main{width:100px;margin:100px auto;}
+	.copration{}
+	.main img{width:100%;}
+	@-webkit-keyframes floatUpDown{
+		0%{top:0;}
+		50%{top:15px;}
+		100%{top:0;}
+	}
+	@-moz-keyframes floatUpDown{
+		0%{top:0;}
+		50%{top:15px;}
+		100%{top:0;}
+	}
+	@-o-keyframes floatUpDown{
+		0%{top:0;}
+		50%{top:15px;}
+		100%{top:0;}
+	}
+	@keyframes floatUpDown{
+		0%{top:0;}
+		50%{top:15px;}
+		100%{top:0;}
+	}
+	.imgUpDown{
+		position: relative;
+		top:0;
+		-webkit-animation:floatUpDown 2s infinite linear;
+		-moz-animation:floatUpDown 2s infinite linear;
+		-ms-animation:floatUpDown 2s infinite linear;
+		-o-animation:floatUpDown 2s infinite linear;
+	}
+	</style>
+</head>
+<body>
+	<div class="main">
+		<div class="copration">
+			<img src="icon.png" class="imgUpDown">
+		</div>
+		
+	</div>
+</body>
+</html>
